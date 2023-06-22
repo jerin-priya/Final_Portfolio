@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolia Website-Easy Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea96bc103f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineering Student</p>
+           
+            <h1>
+                Hi, I'm <span>Jerin Priya</span><br />from Bangladesh!</h1>
+        </div>
+    </div>
+</div>
+<!--------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Building Android/ios apps</li>
+                    <li><span>Problem Solving</span><br>Proven problem solver with a track record of delivering innovative and effective solutions</li>
+                    <li><span>Programming Languages</span><br>Proficient in multiple programming languages (C,C++,Java,Python,Kotlin),with a strong ability to adapt and quickly learn new technologies</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>BSc in Software Engineering</span><br />
+                    University Name: SUST,Sylhet <br />Session:2019-20<br />
+                    CGPA:3.8<br /></li>
+                  <li><span>Higher Secondary School Certificate</span><br />
+                    College:Holy Cross College, Dhaka <br />GPA:5.00<br /></li>
+                  <li><span>Secondary Secondary School Certificate</span><br />
+                    School:Dhaladia High School,Gazipur<br />
+                    GPA:5.00<br /> 
+                    Scholarship: General category </li>
+                    <li><span>Junior School Certificate</span><br />
+                        School:Dhaladia High School,Gazipur<br />
+                        GPA:5.00<br /> 
+                        Scholarship: General category</li>
+                    <li><span>Primary School Certificate</span><br />
+                        School:Mawlana Gias Uddin Kinder Gartain,Gazipur<br />
+                        GPA:5.00<br />
+                        Scholarship: General category </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Participant in Contest</span><br />
+                    1. Participant in National Girls' Programming Contest'22<br />
+                    2. Participant in Ada Lovelace National Girl's Programming Contest'21<br/>
+                    3. Participate in SUST Inter University Programming Contest
+                  </li>
+                  <li>
+                    <span>Project</span><br />
+                   1.Retro-Turtles<br/>
+                   2.Express Jatrakhana<br/>
+                   3.Racing Car<br/>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------services----------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Proficient in web design, combining creativity and technical expertise to create visually appealing and user-friendly websites.</p>
+                <a href="#">Learn more</a>
+               </div>
+
+               <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Skilled in UI/UX design, crafting intuitive and visually captivating user experiences that enhance usability and drive user engagement.</p>
+                  <a href="#">Learn more</a>
+               </div>
+
+               <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Android App</h2>
+                <p>Experienced in developing high-quality Android applications, leveraging a strong understanding of mobile development principles and delivering user-centric solutions.</p>
+                <a href="#">Learn more</a>
+               </div>
+
+              
+              
+        </div>
+    </div>
+</div>
+<!------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Project 150</h3>
+                    <P>This is a Python based game project. For my game project, I developed an engaging and interactive game using Python as the primary programming language. This project allowed me to combine my passion for coding with my love for gaming, resulting in a polished and enjoyable experience.</P>
+                    <a href="https://github.com/jerin-priya/Retro-Turtles"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Racing Car</h3>
+                    <P>This is a Java based game project. My Java-based game project demonstrates my ability to create captivating games using the Java programming language. Through this project, I showcased my skills in game design, programming, problem-solving, and user experience. The project exemplifies my commitment to delivering high-quality games while leveraging the features and flexibility offered by Java and related technologies.</P>
+                    <a href="https://github.com/jerin-priya/CarGame"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.webp">
+                <div class="layer">
+                    <h3>Project 250</h3>
+                    <P>This is a Java based Android app. My Java-based Android app project demonstrates my ability to create impactful and user-friendly applications using Java and the Android platform. Through this project, I showcased my skills in mobile app development, UI/UX design, programming, and performance optimization. The project exemplifies my commitment to delivering high-quality apps while leveraging the features and capabilities offered by Java and the Android ecosystem</P>
+                    <a href="https://github.com/jerin-priya/Project_250"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more..</a>
+    </div>
+</div>
+
+<!-------------contact-------------->
+<div id="contact">
+    <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>priyajerin9@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>01912041301</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jerin.priya.12?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjerin-priya-4781b4234%3Ffbclid%3DIwAR3s888LfLKiNXlDdN2tBsU6WCne0MxwNWAAbgiiQ15WUx-JmuBK2vak1bk&h=AT2J58znS5R3jK4A_KCsRPAoqntf9id-0tsjK9yKPxTslIpxVpMCLrYct29jSUdVPccxAGOkPQgjWc0FUpGhrtdieJUUELvokaEGjEHiJwZPxdchvdX9TKLyfCvskRzYCrUFIg"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fjerinpriyaa%3Figshid%3DMzNlNGNkZWQ4Mg%253D%253D%26fbclid%3DIwAR3lQYlGT4jTYbBT32czY0SEGwmMFG6cYlRR_SSDKZohNxtZrUzV2P7bhCk&h=AT2J58znS5R3jK4A_KCsRPAoqntf9id-0tsjK9yKPxTslIpxVpMCLrYct29jSUdVPccxAGOkPQgjWc0FUpGhrtdieJUUELvokaEGjEHiJwZPxdchvdX9TKLyfCvskRzYCrUFIg"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required >
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                      </form>
+                    <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Coded with <i class="fa-solid fa-heart"></i> by Jerin Priya</p>
+    </div>
+</div>
+
+
+<script>
+       
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+
+</script>
+
+<script>
+var sidemeu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right="0";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbys2pKtRXuPYQk840EpjOZodsgvHTGMNLrNfKmz9wn2O4XZeMSYl2jaTD4mbLGgHgZG0g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           msg.innerHTML="Message sent successfully"
+           setTimeout(function(){
+            msg.innerHTML= " "
+           },5000)
+           form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
